@@ -36,7 +36,7 @@
 
 Name:       %{?scl_prefix}%{pkg_name}
 Version:    2.2
-Release:    7.11%{?dist}
+Release:    7.12%{?dist}
 Epoch:      0
 Summary:    Compiler call initiators for Plexus
 # extras subpackage has a bit different licensing
@@ -49,7 +49,7 @@ Source1:    http://www.apache.org/licenses/LICENSE-2.0.txt
 Source2:    LICENSE.MIT
 
 BuildArch:      noarch
-BuildRequires:  %{?scl_prefix_java_common}maven-local
+BuildRequires:  %{?scl_prefix}maven-local
 BuildRequires:  %{?scl_prefix_java_common}javapackages-tools
 BuildRequires:  %{?scl_prefix_java_common}junit
 BuildRequires:  %{?scl_prefix}plexus-classworlds
@@ -131,6 +131,9 @@ set -e -x
 %doc LICENSE LICENSE.MIT
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 0:2.2-7.12
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Michal Srb <msrb@redhat.com> - 0:2.2-7.11
 - maven33 rebuild #2
 
