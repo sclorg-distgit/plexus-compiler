@@ -6,7 +6,7 @@
 Name:       %{?scl_prefix}plexus-compiler
 Epoch:      0
 Version:    2.8.1
-Release:    4.1%{?dist}
+Release:    4.2%{?dist}
 Summary:    Compiler call initiators for Plexus
 # extras subpackage has a bit different licensing
 # parts of compiler-api are ASL2.0/MIT
@@ -107,6 +107,9 @@ cp %{SOURCE2} LICENSE.MIT
 %doc LICENSE LICENSE.MIT
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 0:2.8.1-4.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 0:2.8.1-4.1
 - Automated package import and SCL-ization
 
